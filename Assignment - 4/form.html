@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Registration form</title>
+</head>
+
+<style>
+body {
+  background-image: url('assign4.jpg');
+  background-size : 100%;
+  background-repeat: no-repeat;
+}
+
+form{
+	margin-left : 600px;
+	width: 500px;
+	margin-top : 150px;
+}
+</style>
+
+<body>
+<h2><center><font color="black" face="cursive">Registration Form</font></center></h2>
+<form method="get">
+<fieldset>
+<center>
+<font color="black" align="left" face="verdana" size="2">
+<p>
+<label>First Name:<br>
+<input type="text" name="fname" id="fname" placeholder ="First Name" onblur = "myfunction()">
+</label> 
+</p>
+
+<p>
+<label>Last Name:<br>
+<input type="text" name="lname" id="lname" placeholder ="Last Name" onblur = "myfunction1()">
+</label> 
+</p>
+
+<p>
+<label>Phone:<br>
+<input type="text" name="phone" id="phone" placeholder ="phone" onblur = "myfunction2()">
+</label>
+</p>
+
+<fieldset>
+<legend>Select your gender:</legend>
+<p><label> <input type="radio" name="gender" required value="male"> Male </label>
+<label> <input type="radio" name="gender" required value="female"> Female </label>
+<label> <input type="radio" name="gender" required value="Other"> Other </label></p>
+</fieldset>
+
+<p>
+<label>Address:<br>
+<textarea name="address" id="address" placeholder ="Address" maxlength="1500" onblur = "myfunction3()"></textarea>
+</label>
+</p>
+<br>
+<p><button>Sign Up!</button>
+<br><hr>
+<font align="center" color="black" size="1"><p> MEET PATEL (18CE079)</p></font>
+</center>
+</fieldset>
+</font>
+</form>
+<script>
+	
+	function myfunction(){
+		var x = document.getElementById("fname");
+		x.value = x.value.toUpperCase();
+	}
+
+	function myfunction1(){
+		var y = document.getElementById("lname");
+		y.value = y.value.toUpperCase();
+	}
+
+	function myfunction2(){
+		var z = document.getElementById("phone");
+		z.value = ' +91 ' + z.value;
+	}
+
+	function myfunction3(){
+		var w = document.getElementById("Address");
+		w.value = w.value.tolowerCase();
+	}
+
+</script>>
+
+
+</body>
+<html>
