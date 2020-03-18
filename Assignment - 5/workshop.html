@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #4C4A48;
+    color: #A0A28E;
+    font-size: 16px;
+}
+
+form{
+	color: #8CB4BC;
+	font-size: 20px;
+}
+
+.btn1{
+	border-radius: 12px;
+	background-color: green;
+	color: white;
+	padding: 15px 32px;
+	text-align:center;
+	font-size: 15px;
+	border: none;
+}
+
+
+textarea{
+	background: transparent;
+    border: none;
+    color: #A0A28E;
+    border-bottom: 1px solid #4C4A48;
+    color: "#4C4A48";
+}
+	</style>
+	<title>Workshop</title>
+</head>
+<body>
+
+<div style="background: url(main.png);background-repeat: no-repeat;background-size: cover;">
+<center>
+	
+<div style="width: 800px;height: 1000px;border: 1px solid black;background-color: black;">
+<img src="mytitle.jpg" width="100%" height="300px"><br>
+<form method = "POST" action = "insert.php">
+	Your First Name: &#160;&#160;&#160;&#160;<input type="text" name="fname" placeholder="First Name" required = ""><br><br><br>
+	Your Last Name: &#160;&#160;&#160;<input type="text" name="lname" placeholder="Last Name" required = ""><br><br><br>
+	Your Email: &#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" width="100px" name="email" placeholder="e.g.abc@gmail.com" required = ""><br><br><br>
+	Your Phone: &#160;+ &#160; <input type="text" name="cc" style="width: 30px;" placeholder="91">&#160;
+<input type="text" name="phone" placeholder="Phone no." required = ""><br><br><br>
+	Select Your Country
+	<select name="country">
+    <option value="India">India</option>
+    <option value="Australia">Australia</option>
+    <option value="US">US</option>
+    <option value="Canada">Canada</option>
+    <option value="Other">Other</option>
+    </select><br><br><br>
+    You are:<br><br>
+     <input type="radio" id="student" name="pro" required value="student">
+  <label for="male">Student</label>
+  <input type="radio" id="Faculty Member" name="pro" required value="Faculty Member">
+  <label for="female">Faculty Member</label>
+  <input type="radio" id="professional" name="pro" required value="professional">
+  <label> Professional </label>
+  <br><br><br>
+  Reason :
+  <textarea type = "text" name ="address" placeholder="Reason for Participating in Workshop" maxlength="1500" rows="3" cols="50" required = ""> </textarea><br><br><br>
+  <input type="checkbox" name="copy">Send me copy of your responses<br><br>
+  <button class="btn1" type="Submit" name="submit-search">SUBMIT</button><br>
+ 
+
+
+</form>
+</div>
+</center>
+</div>
+</body>
+</html>
